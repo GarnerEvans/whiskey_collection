@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <section class="bg-dark text-light text-center shadow mb-20">
+        <div class="container p-5 bg-dark text-light">
+            <div class="row">
+                <div class="d-md-flex bg-dark text-light align-items-center justify-content-evenly">
+                    <h1 class="col text-center">{{ current_user.email}} Profile and Details</h1>
+                </div>
+                <div class="row">
+                    <div class="d-md-flex bg-dark text-light align-items-center justify-content-evenly">
+                        <ul class="list-group">
+                            <li class="list-group-item">Email: {{ current_user.email }}</li>
+                            <li class="list-group-item">Token: {{ current_user.token }} </li> 
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark mr-0 text-light justify-content-center">
+            <h1 class="text-center pt-5">Have a Drink</h1>
+            <div class="row p-4 g-3 justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="/app/static/Images/image one.png" alt="" class="img-fluid shadow-lg p-0 h-100">
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="/app/static/Images/image two.png" alt="" class="img-fluid shadow-lg p-0 h-100">
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="/app/static/Images/image three.png" alt="" class="img-fluid shadow-lg p-0 h-100">
+                </div> 
+            </div>
+            <div class="row p-4 g-3 justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="/app/static/Images/image four.avif" alt="" class="img-fluid shadow-lg p-0 h-100">
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="/app/static/Images/image five.png" alt="" class="img-fluid shadow-lg p-0 h-100">
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="/app/static/Images/image six.png.png" alt="" class="img-fluid shadow-lg p-0 h-100">
+                </div> 
+            </div>
+        </div>
+    </section>
+{% endblock %}
